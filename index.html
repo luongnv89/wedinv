@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
     crossorigin="anonymous">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="lib/colorbox.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="lib/colorbox/jquery.colorbox-min.js"></script>
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -203,78 +205,92 @@
 
         <div class="row" id="portfolio-wrapper">
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img23.jpg">
               <img class="img-responsive img-story" src="img/story/img23.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img2.jpg">
               <img class="img-responsive img-story" src="img/story/img2.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img3.jpg">
               <img class="img-responsive img-story" src="img/story/img3.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img4.jpg">
               <img class="img-responsive img-story" src="img/story/img4.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img5.jpg">
               <img class="img-responsive img-story" src="img/story/img5.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img6.jpg">
               <img class="img-responsive img-story" src="img/story/img6.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img7.jpg">
               <img class="img-responsive img-story" src="img/story/img7.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img8.jpg">
               <img class="img-responsive img-story" src="img/story/img8.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img9.jpg">
               <img class="img-responsive img-story" src="img/story/img9.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img10.jpg">
               <img class="img-responsive img-story" src="img/story/img10.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img11.jpg">
               <img class="img-responsive img-story" src="img/story/img11.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item">
-            <a href="">
+            <a class="img-group" href="img/story/img12.jpg">
               <img class="img-responsive img-story" src="img/story/img12.jpg" alt="">
             </a>
           </div>
         </div>
       </div>
+      <script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".img-group").colorbox({rel:'img-group',scalePhotos: true,
+            maxWidth: '100%'});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+			});
+		</script>
     </section>
     <!-- #portfolio -->
 
@@ -332,15 +348,12 @@
     }
   </script>
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
-
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMkRWurKy1jANbc7yQPQMGe0YPgxg0kSk&callback=initMap">
   </script>
 
