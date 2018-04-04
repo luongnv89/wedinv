@@ -10,7 +10,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: fantasy;
 }
 
 a {
@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: fantasy;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", fantasy;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", fantasy;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: fantasy;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
@@ -583,14 +583,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins" fantasy;
   font-size: 14px;
 }
 
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: #f2f0f0;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -680,7 +680,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", fantasy;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -702,7 +702,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7f7f7;
+  background: #f2f0f0;
   padding: 80px 0;
 }
 
@@ -790,53 +790,56 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
-/* Team Section
+/* rsvp Section
 --------------------------------*/
-#team {
-  background: #fff;
+#rsvp {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url(../img/story/img13.jpg) fixed center center; */
+  background-size: cover;
   padding: 80px 0 60px 0;
+  background: #f7f7f7
 }
 
-#team .member {
+#rsvp .member {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#team .member .pic {
+#rsvp .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
 }
 
-#team .member .pic img {
+#rsvp .member .pic img {
   max-width: 100%;
 }
 
-#team .member h4 {
+#rsvp .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
 }
 
-#team .member span {
+#rsvp .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-#team .member .social {
+#rsvp .member .social {
   margin-top: 15px;
 }
 
-#team .member .social a {
+#rsvp .member .social a {
   color: #b3b3b3;
 }
 
-#team .member .social a:hover {
+#rsvp .member .social a:hover {
   color: #2dc997;
 }
 
-#team .member .social i {
+#rsvp .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
@@ -979,4 +982,37 @@ body.mobile-nav-active #mobile-nav-toggle {
 .map{
   height: 400px;
   width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Mai's style
+--------------------------------------------------------------*/
+.couple_title {
+  font-family: 'AlexBrushRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.5em;
+  color: white;
+  margin-bottom: -1px;
+}
+.date_annouce{
+  font-family: 'AlexBrushRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  color: white;
+  margin-bottom: -10px;
+}
+.intro_text{
+  font-family: -webkit-pictograph;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.4em;
+  color: #cccccc;
+  margin-bottom: -5px;
+}
+
+.countdown_clock{
+font-family: "Parisienne",
+cursive;
 }

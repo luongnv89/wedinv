@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>The Wedding of Luong and Mai</title>
+  <title>LM's Wedding</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="The wedding invitation of Luong and Mai">
@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="lib/colorbox/colorbox.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="lib/colorbox/jquery.colorbox-min.js"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/alex-brush" type="text/css" />
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -78,9 +79,14 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Luong & Mai</h1>
-      <h2>are getting married</h2>
-      <h2>May 05, 2018 | Mairie Palaiseau</h2>
+      <h4 class="intro_text">WE ARE GETTING MARRIED</h4>
+      <p class="couple_title">Luong & Mai</p>
+      
+      <img src="https://dotrex.co/theme-preview/aimer-wedding/img/ico-heart2.png" alt="heart">
+      <br/>
+      <p class="date_annouce">05.05.2018</p>
+      <img src="http://astheme.ourdreamit.com/sweetheart/p-s-t/grid-gallery/images/announcement-bg.png" alt="annoucement">
+     <br/>
       <a href="#services" class="btn-get-started">See detail</a>
     </div>
   </section>
@@ -99,22 +105,22 @@
         </div>
         <div class="row counters">
           <div class="col-sm-3 col-md-3 col-lg-3 col-3 text-center">
-            <span id="c-day">00</span>
+            <span class="countdown_clock" id="c-day">00</span>
             <p>Days</p>
           </div>
 
           <div class="col-sm-3 col-md-3 col-lg-3 col-3 text-center">
-            <span id="c-hour">00</span>
+            <span class="countdown_clock" id="c-hour">00</span>
             <p>Hours</p>
           </div>
 
           <div class="col-sm-3 col-md-3 col-lg-3 col-3 text-center">
-            <span id="c-min">00</span>
+            <span class="countdown_clock" id="c-min">00</span>
             <p>Minutes</p>
           </div>
 
           <div class="col-sm-3 col-md-3 col-lg-3 col-3 text-center">
-            <span id="c-sec">00</span>
+            <span class="countdown_clock" id="c-sec">00</span>
             <p>Seconds</p>
           </div>
 
@@ -144,8 +150,8 @@
               <h4 class="title">
                 <a href="">Ceremony</a>
               </h4>
-              <h5 class="section-title">15h May 05, 2018</h5>
-              <h5 class="section-title">Mairie Palaiseau, 91 rue de Paris, 91120 Palaiseau</h5>
+              <p class="section-title">15h-16h May 05, 2018</p>
+              <p class="section-title">Mairie Palaiseau, 91 rue de Paris, 91120 Palaiseau</p>
               <div id="ceremony-map" class="map">
               </div>
             </div>
@@ -160,8 +166,8 @@
               <h4 class="title">
                 <a href="">Party</a>
               </h4>
-              <h5 class="section-title">16h May 05, 2018</h5>
-              <h5 class="section-title">93 rue Marcel Bonnet, 94230 Cachan</h5>
+              <p class="section-title">16h-21h May 05, 2018</p>
+              <p class="section-title">93 rue Marcel Bonnet, 94230 Cachan</p>
               <div id="party-map" class="map">
               </div>
             </div>
@@ -171,10 +177,9 @@
       </div>
     </section>
     <!-- #services -->
-
     <!--==========================
-    Call To Action Section
-    ============================-->
+            Call To Action Section
+            ============================-->
     <section id="call-to-action">
       <div class="container wow fadeIn">
         <div class="row">
@@ -183,14 +188,58 @@
             <p class="cta-text"> Don't forget to let us know if you can join us! Kindly respond by April 21th, 2018</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://goo.gl/forms/D78iKlbufmh2uiL33">Register Now</a>
+            <a class="cta-btn align-middle" href="https://goo.gl/forms/D78iKlbufmh2uiL33">Go Go Now</a>
           </div>
         </div>
-
+    
       </div>
     </section>
+    
+    <!--  <section id="portfolio">
+          <div class="container wow fadeInUp">
+            <div class="section-header">
+              <h3 class="section-title">IMPORTANT PEOPLE</h3>
+              <p class="section-description">We love you all</p>
+            </div>
+        
+            <div class="row">
+            </div>
+        
+            <div class="row" id="portfolio-wrapper">
+              <div class="col-lg-3 col-md-6 portfolio-item">
+                <a class="img-group" href="img/story/img23.jpg">
+                  <img class="img-responsive img-story" src="img/story/img23.jpg" alt="">
+                  <p>Bridesmaid</p>
+                </a>
+              </div>
+        
+              <div class="col-lg-3 col-md-6 portfolio-item">
+                <a class="img-group" href="img/story/img2.jpg">
+                  <img class="img-responsive img-story" src="img/story/img2.jpg" alt="">
+                </a>
+              </div>
+            </div>
+        
+        
+          </div>
+          <script>
+            $(document).ready(function () {
+              //Examples of how to assign the Colorbox event to elements
+              $(".img-group").colorbox({
+                rel: 'img-group', scalePhotos: true,
+                maxWidth: '90%', maxHeight: '90%'
+              });
+              $(".callbacks").colorbox({
+                onOpen: function () { alert('onOpen: colorbox is about to open'); },
+                onLoad: function () { alert('onLoad: colorbox has started to load the targeted content'); },
+                onComplete: function () { alert('onComplete: colorbox has displayed the loaded content'); },
+                onCleanup: function () { alert('onCleanup: colorbox has begun the close process'); },
+                onClosed: function () { alert('onClosed: colorbox has completely closed'); }
+              });
+            });
+          </script>
+        </section>-->
     <!-- #call-to-action -->
-
     <!--==========================
       Portfolio Section
     ============================-->
@@ -294,16 +343,17 @@
     </section>
     <!-- #portfolio -->
 
+
     <!--==========================
       Team Section
     ============================-->
     <section id="rsvp">
       <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">RSVP</h3>
+          <h3 class="section-title">ARE YOU COMING?</h3>
           <p class="section-description">We are so excited to celebrate with you! Please let's us know about your coming before April 21, 2018!</p>
           <div class="text-center">
-            <a class="btn btn-lg btn-default" href="https://goo.gl/forms/D78iKlbufmh2uiL33" style="border:2px solid; border-radius: 30px;">Register Now</a>
+            <a class="btn btn-lg btn-default" href="https://goo.gl/forms/D78iKlbufmh2uiL33" style="border:2px solid; border-radius: 30px;">Tell Us</a>
           </div>
         </div>
       </div>
